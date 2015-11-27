@@ -410,7 +410,7 @@ static const uint8_t CURRENT_BLOB_VERSION = 2;
 
 class Blob {
 public:
-    Blob(const uint8_t* value, int32_t valueLength, const uint8_t* info, uint8_t infoLength,
+    Blob(const uint8_t* value, size_t valueLength, const uint8_t* info, uint8_t infoLength,
             BlobType type) {
         if (valueLength > VALUE_SIZE) {
             valueLength = VALUE_SIZE;
